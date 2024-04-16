@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>European Language Classifier</title>
+    <style>
+        .center {
+        text-align: center;
+        height: 100vh; /* 화면 전체 높이로 설정 */
+        }
+    </style>
+</head>
+<body>
+    <div class="center">
+        <h2>「유럽 언어 판독기」</h2>
+        <h4>대상 언어 : 영어, 프랑스어, 독일어, 이탈리아어, 독일어, 라틴어</h4>
+        <h4 style="color: blue">* 성경 구절을 사용하면 정확도가 더 높아짐 *</h4>
+        <hr color="blue" size="2">
+        <form action="/cgi-bin/project_data.py" method="post">
+            <textarea name="sentence" cols="50" rows="5" placeholder="입력 텍스트" spellcheck="false"></textarea><br>
+            <input type="submit">
+        </form>
+    </div>
+    
+</body>
+</html>
